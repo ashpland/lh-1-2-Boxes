@@ -12,7 +12,7 @@
 
 - (instancetype)init
 {
-    return [self initWithBoxHeight:0 boxWidth:0 boxLength:0];
+    return [self initWithBoxHeight:10 boxWidth:10 boxLength:10];
 }
 
 // Designated initializer
@@ -29,6 +29,11 @@
 -(float)calculateVolume
 {
     return self.height * self.length * self.length;
+}
+
+-(int)yoDawgIHeardYouLikeBoxes:(Box *)otherBox
+{
+    return floorf(self.calculateVolume / otherBox.calculateVolume);
 }
 
 @end

@@ -17,5 +17,6 @@
 -(instancetype)initWithBoxHeight:(float)height boxWidth:(float)width boxLength:(float)length;
 
 -(float)calculateVolume;
+-(int)yoDawgIHeardYouLikeBoxes:(Box *)otherBox;
 
 @end
