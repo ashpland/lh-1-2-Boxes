@@ -10,4 +10,20 @@
 
 @implementation Box
 
+- (instancetype)init
+{
+    return [self initWithBoxHeight:0 boxWidth:0 boxLength:0];
+}
+
+// Designated initializer
+-(instancetype)initWithBoxHeight:(float)height boxWidth:(float)width boxLength:(float)length
+{
+    if(self = [super init]) {
+        _height = height;
+        _width = width;
+        _length = length;
+    }
+    return self;
+}
+
 @end
