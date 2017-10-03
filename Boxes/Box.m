@@ -26,4 +26,9 @@
     return self;
 }
 
+-(float)calculateVolume
+{
+    return self.height * self.length * self.length;
+}
+
 @end

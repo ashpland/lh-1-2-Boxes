@@ -16,4 +16,6 @@
 
 -(instancetype)initWithBoxHeight:(float)height boxWidth:(float)width boxLength:(float)length;
 
+-(float)calculateVolume;
+
 @end
